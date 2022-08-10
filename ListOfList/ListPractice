@@ -1,0 +1,29 @@
+#!/usr/bin/env python3
+import pprint
+
+import pandas as pd
+
+SushiList =["Sashimi","Nigiri"]
+
+BurritoList=["Bean and Cheese Burrito","Breakfast Burrito"]
+
+SandwichList = ["Philly CheeseSteak","Grilled Cheese"]
+
+FavoriteFoods = [SushiList,BurritoList,SandwichList]
+
+print(FavoriteFoods,end="\n\n")
+
+print("My Favorite Foods: ",FavoriteFoods[0][0],end="\n\n")
+
+print("Super Hero Information",end="\n\n")
+
+superHeroDict ={
+    "SuperMan":{"Abilities":["flight","superhuman strength", "x-ray vision","heat vision"],"SuperPowers":"Yes", "PowerLevel": "High"},
+    "BatMain":{"Abilities":[ "intellect", "fighting skills", "wealth"],"SuperPowers":"No", "PowerLevel": "Low"},
+    "Flash":{"Abilities":["speed"], "SuperPowers":"Yes" , "PowerLevel": "High"}
+}
+formatDict = pprint.pformat(superHeroDict)
+print(formatDict)
+
+print("\n\nPrint out as pandas dataframe\n\n")
+print(pd.DataFrame(superHeroDict))

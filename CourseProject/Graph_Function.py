@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+
 import sympy as sym
 from sympy import *
 import numpy as np
@@ -23,7 +24,9 @@ def PlotXY_DATA(FN):
     
     df = pd.DataFrame({'x':x_List, 'y':y_List})
     df.to_csv("x_y_Function_Data", sep='\t')
-    df.plot('x', 'y')
+    df.plot('x', 'y', kind='line')
+    plt.title("Function Graph")
+    plt.savefig("Function_Graph.png")
     return df
     
 def main():

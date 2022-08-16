@@ -1,0 +1,37 @@
+CHOOSE_TEXT: |
+            Select Method
+            
+             - Type q to quit 
+             - Type h for Instructions
+             - Type s for 2D Simple Plot
+             - Type c for Complex Plot
+HELP_TEXT: |
+            ---------------------------------------------
+            Select Method Instuctions
+            
+             - Type q to quit 
+             - Type h for Instructions
+             - Type s for 2D Simple Plot
+             - Type c for Complex Plot
+             
+             Functional Methods 
+             
+             - Integration: integrate()
+             - Differentiate: diff()
+             - Limit: limit()
+             - SolveForRoot: root()
+             
+             Variables
+             
+             - Eulers constant E
+             - Complex number I
+             
+             Sympy
+             
+             - Includes functions from Sympy import
+             ---------------------------------------------
+RANGE_TEXT: |
+            Select Domain 
+            
+             Example (min max):  -20 20
+             
